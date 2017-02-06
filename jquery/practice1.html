@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<style type="text/css">
+		div.panel,p.flip
+		{
+			margin:0px;
+			padding:5px;
+			text-align:center;
+			background:#e5eecc;
+			border:solid 1px #c3c3c3;
+		}
+		div.panel
+		{
+			height:120px;
+			display:none;
+		}
+	</style>
+</head>
+<body>
+	<p id="p1">如果点击“隐藏”按钮，我就会消失。</p>
+	<button id="hide" type="button">隐藏</button>
+	<button id="show" type="button">显示</button>
+	<button id="fadeout" type="button">淡出</button>
+	<button id="fadein" type="button">淡入</button>
+	<button id="fadetoggle" type="button">fadeToggle</button>
+
+	<br/>
+	<br/>
+	<button id="stop">停止滑动</button>
+	<div class="panel">
+		<p>W3School - 领先的 Web 技术教程站点</p>
+		<p>在 W3School，你可以找到你所需要的所有网站建设教程。</p>
+	</div>
+	<p class="flip">请点击这里</p>
+
+
+	<br/>
+	<br/>
+	<br/>
+	<br/>
+	<button id="anibtn">开始动画</button>
+	<div id='aniobj' style="background:#98bf21;height:100px;width:100px;position:absolute;"></div>
+
+	<script type="text/javascript" src="jquery-1.11.1.min.js"></script>
+	<script type="text/javascript" src="js/effect.js"></script>
+	
+</body>
+</html>

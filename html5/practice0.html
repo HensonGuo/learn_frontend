@@ -1,0 +1,36 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+	<meta charset="utf-8">
+	<style type="text/css"> 
+		body
+		{
+			font-size:70%;
+			font-family:verdana,helvetica,arial,sans-serif;
+		}
+	</style>
+</head>
+
+<body style="margin:0px;">
+
+<p>把鼠标悬停在下面的矩形上可以看到坐标：</p>
+<br />
+<br />
+
+<div id="coordiv" style="float:left;width:199px;height:99px;border:1px solid #c3c3c3" onmousemove="cnvs_getCoordinates(event)" onmouseout="cnvs_clearCoordinates()"></div>
+<br />
+<br />
+<br />
+<div id="xycoordinates"></div>
+
+<br />
+<canvas id="myCanvas" width="200" height="100" style="border:1px solid #c3c3c3;">
+	Your browser does not support the canvas element.
+</canvas>
+
+
+<script type="text/javascript" src="js/canvas.js"></script>
+ 
+ 
+</body>
+</html>

@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+</head>
+<body onload='onloadFinished()'>
+
+	<h1 onclick="this.innerHTML='谢谢'">hello world</h1>
+
+	<p  id='intro'></p>
+
+	<div id='desc'>
+		<p>The DOM is very useful</p>
+		<p>sample</p>
+	</div>
+	
+	<input id="fname" type="text" onfocus="onfocuse(this)"/>
+	<br/>
+	<div onmouseover="onover(this)" onmouseout="onout(this)" onmousedown="ondown(this)" onmouseup="onup(this)" style="background-color:green;width:120px;height=20px;padding:80px;margin:20px;color:#ffffff">点我</div>
+
+	<div id="div1">
+	<p id="p1">这是一个段落。</p>
+	<p id="p2">这是另一个段落。</p>
+	</div>
+
+	<script type="text/javascript" src="htmldom.js"></script>
+</body>
+</html>

@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+</head>
+<body>
+	<!--文本域-->
+	<form>
+		名：
+		<input type="text" name="firstname"/>
+		<br/>
+		姓：
+		<input type="text" name="lastname"/>
+	</form>
+	
+	<!--密码域-->
+	<form>
+		用户：
+		<input type="text" name="user"/>
+		密码：
+		<input type="password" name="password"/>
+		<p>
+			请注意，当您在密码域当中键入字符时，浏览器将使用项目符号来代替这些字符
+		</p>
+	</form>
+
+	<!--单选按钮-->
+	<form>
+		<input type="radio" name="sex" value="value"/>Male
+		<input type="radio" name="sex" value="value"/>Female
+	</form>
+
+	<!--复选框-->
+	<form>
+		<input type="checkbox" name="bike" />
+			I have a bike
+		<br />
+		<input type="checkbox" name="car" />
+			I have a car
+	</form>
+
+	<!--表单的动作属性（Action）和确认按钮-->
+	<form type="input" action="html_form_action.asp" method="get">
+		Username:
+		<input type="text" name="user"/>
+		<input type="submit" value="Submit"/>
+	</form>
+
+	<!--创建按钮-->
+	<form>
+		<input type="button" value="button"/>
+	</form>
+
+	<!--Fieldset around data-->
+	<form>
+		<fieldset>
+			<legend>健康信息</legend>
+			身高：<input type="text"/>
+			体重：<input type="text">
+		</fieldset>
+	</form>
+	<p>如果表单周围没有边框，说明您的浏览器太老了。</p>
+
+	<!--简单的下拉列表-->
+	<select name="cars">
+		<option value="1">1</option>
+		<option value="2" selected="selected">2</option>
+	</select>
+
+
+</body>
+</html>

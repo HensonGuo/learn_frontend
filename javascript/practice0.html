@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+</head>
+<body>
+	<p id="demoText">aaa</p>
+	<img id = "demoImg" src="https://gss1.bdstatic.com/5eN1dDebRNRTm2_p8IuM_a/res/r/image/2016-07-10/b2e90d5a529d64dd14745102de6c254e.jpg"/>
+	<p>以上是我的练习</p>
+
+	<script type="text/javascript">
+	console.info('Hellow world')
+	
+	function writeH()
+	{
+		document.write('<p>This is a paragraph</p>')		
+	}
+	writeH()
+
+	function changeDemo()
+	{
+		demo = document.getElementById('demoText');
+		demo.innerHTML = 'bbb';
+	}
+
+	function changeImg()
+	{
+		
+		elementImg = document.getElementById('demoImg')
+		elementImg.src = "https://gss1.bdstatic.com/5eN1dDebRNRTm2_p8IuM_a/res/r/image/2016-07-10/016003e9dcc4060f25bea51b4f900434.jpg";
+	}
+
+	function changeStyle()
+	{
+		demo = document.getElementById('demoText');
+		demo.style.color="#ff0000";
+	}
+
+	function verify(x)
+	{
+		if (x == '' || isNaN(x))
+			alert('nima')
+	}
+	</script>
+
+	<button type="button" onclick="alert('警告警告')">弹窗消息</button>
+	<button type="button" onclick="changeDemo()">改变文字</button>
+	<button type="button" onclick="changeImg()">改变图像</button>
+	<button type="button" onclick="changeStyle()">改变样式</button>
+	<button type="button" onclick="verify('abc')">验证输入</button>
+</body>
+</html>
+
+
+<!--基本介绍-->
+	<!--1：名词：document==html页面!-->
+	<!--2：函数：函数脚本内执行func(); 元素调用："func()"，应为脚本是"text/javascript" 所以元素访问方法时都是通过字符串访问!-->
+	<!--3：编译：脚本加载到网页当中；编译当前的js文件并生成在当前document内的定义!-->
+	<!--4: 位置：head body 外部    注意：我们把 JavaScript 放到了页面代码的底部，这样就可以确保在 <p> 元素创建之后再执行脚本-->
+
+
+<!--调试方法-->
+	<!--1.F11打开浏览器控制台-->
+	<!--1.alert(str) alert是页面的内置方法-->
+	<!--1.console.func(str) alert是页面的内置方法 debug info warn error-->
